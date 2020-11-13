@@ -1,1 +1,1 @@
-# selenuim-ui-tests
+# selenuim-ui-tests sbt.qa.automation
