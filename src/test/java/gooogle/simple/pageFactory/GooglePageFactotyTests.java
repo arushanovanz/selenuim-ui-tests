@@ -1,10 +1,8 @@
 package gooogle.simple.pageFactory;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.condition.DisabledIfSystemProperties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import ru.sbt.qa.uitest.pages.GoogleMainPage;
@@ -31,6 +29,7 @@ public class GooglePageFactotyTests {
         }
     }
 
+    @Disabled
     @Test
     public void pageFactoryTest(){
         GoogleMainPage googleMainPage = new GoogleMainPage(driver);
