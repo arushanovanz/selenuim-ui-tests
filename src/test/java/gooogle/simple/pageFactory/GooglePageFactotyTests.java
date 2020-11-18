@@ -2,7 +2,6 @@ package gooogle.simple.pageFactory;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.condition.DisabledIfSystemProperties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import ru.sbt.qa.uitest.pages.GoogleMainPage;
@@ -30,6 +29,7 @@ public class GooglePageFactotyTests {
     }
 
     @Disabled
+    @DisplayName("Такой простой поиск брокколи")
     @Test
     public void pageFactoryTest(){
         GoogleMainPage googleMainPage = new GoogleMainPage(driver);
